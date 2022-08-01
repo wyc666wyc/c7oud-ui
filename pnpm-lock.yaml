@@ -14,6 +14,18 @@ importers:
       vite: 3.0.4
       vue: 3.2.37
 
+  examples:
+    specifiers:
+      c7oud-ui: workspace:^1.0.0
+    dependencies:
+      c7oud-ui: link:../packages/components
+
+  packages/components:
+    specifiers:
+      '@c7oud-ui/utils': workspace:^1.0.0
+    dependencies:
+      '@c7oud-ui/utils': link:../utils
+
 packages:
 
   /@babel/parser/7.18.9:
